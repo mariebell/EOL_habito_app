@@ -85,7 +85,7 @@ main {
      */
     &.fullscreen {
         background: {
-            image: image-url('kawa.png');
+            image: url('kawa.png');
             repeat: no-repeat;
             position: top center;
             attachment: fixed;
