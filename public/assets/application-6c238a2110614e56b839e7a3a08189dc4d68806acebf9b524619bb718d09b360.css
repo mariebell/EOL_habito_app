@@ -1,0 +1,214 @@
+/**
+ * reset.css
+ * Reset Browser-Standard Settings
+ */
+
+
+body,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #000000;
+}
+/* order of propaties
+ * @show https://twitter.com/takaaki_sugar/status/1060155511478214656
+ *  display
+ *  position
+ *  width,height
+ *  padding,margin
+ *  background
+ *  color,font
+ */
+/* line 12, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+body {
+  background-color: #999;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+/* line 17, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #FE9A2E;
+}
+/* line 25, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+header h1 {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  color: #FFF;
+}
+/* line 31, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+header p {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font-size: 30px;
+}
+
+/* line 43, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  padding-top: 50px;
+  margin-right: -200px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 53, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 56, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+nav ul li {
+  display: block;
+  width: 100%;
+}
+/* line 60, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+nav ul a {
+  display: block;
+  width: 100%;
+  padding: 5px 0 5px 10px;
+  color: #FFF !important;
+}
+/* line 66, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+nav ul a:hover {
+  background-color: #FFF;
+  color: #333 !important;
+}
+
+/* line 73, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main {
+  width: 100%;
+  min-height: 800px;
+  margin: 0 auto;
+  /* 
+   * fullscreen
+   */
+  /*
+   * general
+   */
+}
+/* line 78, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main section {
+  max-width: 960px;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* line 87, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen {
+  background-image: url("kawa.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-min-height: 800px;
+  color: #FFF;
+}
+/* line 98, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen .shade-filter {
+  min-height: 800px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+/* line 103, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen .catch-copy {
+  padding: 50px 0;
+  font-size: 64px;
+}
+/* line 107, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen .catch-copy span {
+  color: #FE9A2E;
+  font-size: 80px;
+}
+@media screen and (max-width: 600px) {
+  /* line 103, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+  main.fullscreen .catch-copy {
+    font-size: 36px;
+  }
+  /* line 115, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+  main.fullscreen .catch-copy span {
+    font-size: 48px;
+  }
+}
+/* line 121, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen .meigen {
+  font-size: 0.9em;
+  text-align: right;
+  line-height: 1.8em;
+}
+/* line 127, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.fullscreen .button-try {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  background-color: #FE9A2E;
+  color: #FFF;
+  border-radius: 5px;
+}
+/* line 140, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.general {
+  margin-top: 50px;
+}
+/* line 143, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.general ul {
+  padding: 10px;
+  background-color: #FFF;
+}
+/* line 148, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+main.general ul li {
+  list-style-type: none;
+  border-bottom: 4px solid #db507e;
+  margin-bottom: 10px;
+}
+
+/* line 158, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+footer {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #FFF;
+  line-height: 200px;
+  text-align: center;
+}
+/* line 168, /Users/sagara/Projects/habito/app/assets/stylesheets/style.scss */
+footer p {
+  padding: 0;
+  margin: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
