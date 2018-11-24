@@ -1,0 +1,171 @@
+/* order of propaties
+ * @show https://twitter.com/takaaki_sugar/status/1060155511478214656
+ *  display
+ *  position
+ *  width,height
+ *  padding,margin
+ *  background
+ *  color,font
+ */
+
+body {
+    background-color: #999;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FE9A2E;
+
+    h1 {
+        position: absolute;
+        top: 2px;
+        left: 10px;
+        color: #FFF;
+    }
+    p {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        padding: 0;
+        margin: 0;
+
+        color: #FFF;
+        font-size: 30px;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    padding-top: 50px;
+    margin-right: -200px;
+    background-color: rgba(0,0,0,0.8);
+
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            display: block;
+            width: 100%;
+        }
+        a {
+            display: block;
+            width: 100%;
+            padding: 5px 0 5px 10px;
+            color: #FFF !important;
+        }
+        a:hover {
+            background-color: #FFF;
+            color: #333 !important;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    min-height: 800px;
+    margin: 0 auto;
+
+    section {
+        max-width: 960px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    /* 
+     * fullscreen
+     */
+    &.fullscreen {
+        background: {
+            image: url('kawa.png');
+            repeat: no-repeat;
+            position: top center;
+            attachment: fixed;
+            size: cover;
+            min-height: 800px;
+        }
+        color: #FFF;
+
+        .shade-filter {
+            min-height: 800px;
+            background-color: rgba(0,0,0,0.55);
+        }
+
+        .catch-copy {
+            padding: 50px 0;
+            font-size: 64px;
+
+            span {
+                color: #FE9A2E;
+                font-size: 80px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 36px;
+
+                span {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .meigen {
+            font-size: 0.9em;
+            text-align: right;
+            line-height: 1.8em;
+        }
+
+        .button-try {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #FE9A2E;
+            color: #FFF;
+            border-radius: 5px;
+        }
+    }
+
+    /*
+     * general
+     */
+    &.general {
+        margin-top: 50px;
+
+        ul {
+            padding: 10px;
+            background-color: #FFF;
+        }
+
+        ul li {
+            list-style-type: none;
+            border-bottom: 4px solid rgb(219, 80, 126);
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #FFF;
+    line-height: 200px;
+    text-align: center;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
