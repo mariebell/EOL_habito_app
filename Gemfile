@@ -9,8 +9,8 @@ gem 'turbolinks', '5.0.1' # Navigates web application faster
 gem 'jbuilder', '2.6.4' # Builds JSON APIs with ease
 
 group :development, :test do
-  gem 'byebug', '9.0.6', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3', '1.3.13' # A database for development
+  gem 'byebug', '9.0.6', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
@@ -18,6 +18,10 @@ group :development do
   gem 'listen', '3.1.5'
   gem 'spring' # Spring speeds up development by keeping your application running in the background.
   gem 'spring-watcher-listen', '2.0.1'
+end
+
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
