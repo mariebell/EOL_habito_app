@@ -1,13 +1,3 @@
-<header>
-    <h1>Habito</h1>
-    <p>≡</p>
-</header>
-<nav>
-    <ul>
-        <li><a href="dashboard.html">Login</a></li>
-        <li><a href="#">Register</a></li>
-    </ul>
-</nav>
 <main class="fullscreen" style="background-image: url(<%= asset_path 'kawa.png' %>);">
     <div class="shade-filter">
     <section>
@@ -48,10 +38,7 @@
         Habitoを使えば目標を達成するための習慣を身につけることができます。
         Habitoであなたの成し遂げたい目標ライフスタイルを作り上げましょう！       
     </p>   
-    <a class="button-try" href="#">Try now!</a>
+    <%= link_to 'Try now!', { controller: :subjects, action: :index }, class: 'button-try' %>
     </section> 
     </div>
 </main>
-<footer>
-    <p class="copyright">copyright &copy; 2018 Insocie LLC, All rights received.</p>
-</footer>
