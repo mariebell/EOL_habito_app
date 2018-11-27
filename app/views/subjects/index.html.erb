@@ -1,0 +1,18 @@
+<main class="general">
+  <table class="table">
+  <thead class="thead-dark">
+    <th>目標</th>
+    <th>進捗</th>
+    <th>ステップ数</th>
+    <th>更新日</th>
+  </th>
+  <% @subjects.each do |f| %>
+  <tr>
+    <td><%= f.title %></td>
+    <td><%= f.progress %></td>
+    <td><%= f.steps %></td>
+    <td><%= f.updated_at %></td>
+  </tr>
+  <% end %>
+  </table>
+</main>

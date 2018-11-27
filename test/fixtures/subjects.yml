@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: 'プロを目指す人のためのRuby入門'
+  steps: 12
+  progress: 0
+
+two:
+  title: 'Ruby on Rails 5 アプリケーション開発'
+  steps: 10
+  progress: 0
